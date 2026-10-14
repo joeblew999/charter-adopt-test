@@ -1,0 +1,4 @@
+# Started by `charter adopt` (github.com/joeblew999/charter): yours to edit.
+# The repo as `charter repo` keeps it (mise run repo). Topics: lower-case words and hyphens, e.g. ["docs", "command-line"].
+description = "charter-adopt-test"
+topics = []

@@ -1,0 +1,18 @@
+# Started by `charter adopt` (github.com/joeblew999/charter): yours to edit.
+# charter-adopt-test: its tasks. `mise tasks` lists them; `mise run <task>` runs one.
+
+[tools]
+# The tool every task runs, the release's binary. `mise x github:joeblew999/charter@X.Y.Z -- charter upgrade` moves it,
+# and the includes of charter's tasks with it.
+"github:joeblew999/charter" = "0.19.0"
+
+[task_config]
+# Charter's tasks for any repo (the docs site, the repo on GitHub, the issues, the upstream issues):
+# https://joeblew999.github.io/charter/guides/any-repo.html
+# A task defined in this file takes the place of the included one with its name.
+includes = ["git::https://github.com/joeblew999/charter.git//tasks/repo?ref=v0.19.0"]
+
+[settings]
+# mise takes task includes from a git:: source only with this on; without it they are skipped,
+# with a warning, and none of charter's tasks are here.
+experimental = true
